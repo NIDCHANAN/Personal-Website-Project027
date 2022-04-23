@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- เชื่อมไฟล์ Css เข้ากับ HTML -->
+    <link rel="stylesheet" href="./Css/style.css" />
+    <title>Index</title>
+  </head>
+  <!-- เรียกใช้ Css  ใน id="background" -->
+  <body id="background">
+    <header>
+      <!-- เรียกใช้งานใน css ใน id brand -->
+      <div id="brand"><a>MIEW</a></div>
+      <!-- ชุดคำสั่งเมนู โดยมี 3 ตัวเลือก คือ Home About Me และ Game -->
+      <nav>
+        <ul>
+          <!-- Home เชื่อมไปยังไฟล์ index.html -->
+          <li><a href="./index.html">Home</a></li>
+           <!-- Education เชื่อมไปยังไฟล์ Education.html -->
+          <li><a href="./Education.html">Education</a></li>
+          <!-- Game เชื่อมไปยังไฟล์ Gamejs.html -->
+          <li><a href="./gamejs.html">Game</a></li>
+        </ul>
+      </nav>
+      <!-- เรียกใช้งานCSS ใน id hamburger-icon และ onclick ใน JS -->
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+         <!-- สร้างขีด 3 ขึ้น เป็นบาร์ -->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+         <!-- เมื่อขนาดหน้าจอ มีขนาดตามที่กำหนดใน CSS จะเรียกใช้ class="mobile-menu" -->
+        <ul class="mobile-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Education.html">Education</a></li>
+          <li><a href="./gamejs.html">Game</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section id="hero">
+          <div class="hero container">
+            <div>
+              <h1>Well come, <span></span></h1>
+              <h1>My Name is <span></span></h1>
+              <h1>Nidchanan<span> </h1> 
+            </div>
+          </div>
+        </section>
+    </article>
+        <!-- ส่วนท้ายของเว็บ -->
+        <footer>
+          BY Nidchanan W. <br> 62030027
+        </footer>
+    </main>
+    
+  </body>
+  <!-- ส่วนที่เชื่อมโยงไปยังไฟล์ Javascript -->
+  <script src="./Js/nav.js"></script>
+</html>

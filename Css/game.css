@@ -1,0 +1,152 @@
+/*================================================
+
+General
+
+================================================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ Tag Body และ html ให้สูง 100% และพื้นหลังสีดำ*/
+html,
+body {
+  background-color: #000;
+  height: 100%;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ Tag Bod ให้มีพื้นหลังสีดำ ตัวหนังสือสีขาว*/
+body {
+  background: #222;
+  background: radial-gradient(#333, #111);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font: 100%/1.5 sans-serif;
+  overflow: hidden;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ ID mainbody ให้มีความกว้าง กับความสูง 100px*/
+.mainbody{
+  width: 100px;
+  height: 100px;
+}
+
+/*================================================
+
+Score
+
+================================================*/
+/*กำหนดขนาดที่อยู่ภายใต้ ID Score ให้มีตัวหนังสือสีเทาขาว ขนาด30px เป็นตัวหนา จัดวางอยู่ตรงกลาง*/
+.score {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+  
+}
+
+/*================================================
+
+Stage
+
+================================================*/
+/*กำหนดขนาดที่อยู่ภายใต้ ID Stage ให้มีระยะห่างภายนอกเป็น auto ชิดขอบบน 50px*/
+.stage {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: 2; 
+  padding: auto;
+}
+
+/*================================================
+
+Tiles
+
+================================================*/
+/*กำหนดขนาดที่อยู่ภายใต้ ID Tile ให้มีพื้นหลังสีดำ*/
+.tile {
+  background: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  transition-property:
+    background,
+    box-shadow,
+    opacity,
+    transform
+  ;
+  transform: translateZ(0);
+  transition-duration: 3000ms;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ ID Tile เริ่มต้น ให้มีการ set ค่าเป็น 0 ทั้งหมดเพื่อเป็นค่าเริ่มต้น*/
+.tile:before {
+  bottom: 0;
+  content: '';
+  height: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  transition: opacity 300ms;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ ID Tile.path เริ่มต้น ให้มี opacity เป็น 1*/
+.tile.path:before {
+  opacity: 1;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ ID Tile.up เริ่มต้น ให้มีขนาดหนา 4px สีเทาดำ*/
+.tile.up:before {
+  border-bottom: 4px inset rgba(255, 255, 255, 0.15);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ ID Tile.down เริ่มต้น ให้มีขนาดหนา 4px สีเทาดำ*/
+.tile.down:before {
+  border-top: 4px inset rgba(255, 255, 255, 0.15);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ ID Tile.left เริ่มต้น ให้มีขนาดหนา 4px สีเทาดำ*/
+.tile.left:before { 
+  border-right: 4px inset rgba(255, 255, 255, 0.15);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+/*กำหนดขนาดที่อยู่ภายใต้ ID Tile.right เริ่มต้น ให้มีขนาดหนา 4px สีเทาดำ*/
+.tile.right:before { 
+  border-left: 4px inset rgba(255, 255, 255, 0.15);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+/* Media Query สำหรับ ขนาดของ Desktop ที่มีขนาดของหน้าจอที่น้อยกว่า 786px */
+@media only screen and (min-width: 786px) {
+  /*กำหนดขนาดที่อยู่ภายใต้ ID  .tile.down .tile.down .tile.left Tile.right เริ่มต้น ให้มีขนาดหนา กว้าง 3px*/
+  .tile.up:before,
+  .tile.down:before,
+  .tile.left:before,
+  .tile.right:before {
+    border-width: 3px;
+  }
+}
+/* Media Query สำหรับ ขนาดของ Desktop ที่มีขนาดของหน้าจอที่น้อยกว่า 1200px */
+@media only screen and (min-width: 1200px) {
+  /*กำหนดขนาดที่อยู่ภายใต้ ID  .tile.down .tile.down .tile.left Tile.right เริ่มต้น ให้มีขนาดหนา กว้าง 2px*/
+  .tile.up:before,
+  .tile.down:before,
+  .tile.left:before,
+  .tile.right:before {
+    border-width: 2px;
+  }
+}
+ /*กำหนดขนาดที่อยู่ภายใต้ ID  .tile.pressed ให้มีพื้นหลังสีดำ มีเงาของบล็อคสีดำ*/
+.tile.pressed {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+  transition-duration: 0ms;
+}
