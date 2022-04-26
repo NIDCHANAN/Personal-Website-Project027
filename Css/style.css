@@ -5,13 +5,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Tag Body จะมีพื้นหลังสีดำเทา ตัวหนังสือสีขาว ฟอร์นตัวหนังสือคือ Poppins*/
+/*กำหนด element ที่อยู่ภายใต้ Tag Body จะมีพื้นหลังสีดำเทา ตัวหนังสือสีขาว ฟอร์นตัวหนังสือคือ Poppins*/
 body {
   background-color: #353836;
   color: white;
   font-family: "Poppins", sans-serif;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ ID background จะมีพื้นหลังเป็นรูปที่อยู่ใน /image/image.Bg.jpg โดยรูปจะอยู่ตรงกลาง จัดแบบfixed และรูปจะถูกใช้ครั้งเดียว*/
+/*กำหนด element ที่อยู่ภายใต้ ID background จะมีพื้นหลังเป็นรูปที่อยู่ใน /image/image.Bg.jpg โดยรูปจะอยู่ตรงกลาง จัดแบบfixed และรูปจะถูกใช้ครั้งเดียว*/
 #background{
     background: url('../image/image.Bg.jpg') center center fixed;
     background-repeat: repeat ;
@@ -21,12 +21,12 @@ body {
     -o-background-size: cover;
     
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Tag a ใน header จะไม่มีลูกเล่นต่างๆ เช่น การขีดเส้นใต้*/
+/*กำหนด element ที่อยู่ภายใต้ Tag a ใน header จะไม่มีลูกเล่นต่างๆ เช่น การขีดเส้นใต้*/
 header a {
   text-decoration: none;
 }
 
-/*กำหนดขนาดที่อยู่ภายใต้ Tag header มีช่องว่างระหว่าง element จาก “ข้างใน” ทางซ้ายและทางขวาห่าง 20 px พื้นหลังสีเทาดำ สูง 80 px การแสดงผลแบบ flex */
+/*กำหนด element ที่อยู่ภายใต้ Tag header มีช่องว่างระหว่าง element จาก “ข้างใน” ทางซ้ายและทางขวาห่าง 20 px พื้นหลังสีเทาดำ สูง 80 px การแสดงผลแบบ flex */
 header {
   padding: 0 20px;
   background-color: #1d1c1c;
@@ -34,18 +34,18 @@ header {
   display: flex;
   justify-content: space-between;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ ID brand มีขนาด 20px เป็นตัวหนังสือแบบหนา แสดงผลแบบflex จัดอยู่ตรงกลาง*/
+/*กำหนด element ที่อยู่ภายใต้ ID brand มีขนาด 20px เป็นตัวหนังสือแบบหนา แสดงผลแบบflex จัดอยู่ตรงกลาง*/
 #brand {
   font-weight: bold;
   font-size: 30px;
   display: flex;
   align-items: center;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Tag a ที่อยู่ใน ID brand ตัวหนังสือสีขาว*/
+/*กำหนด element ที่อยู่ภายใต้ Tag a ที่อยู่ใน ID brand ตัวหนังสือสีขาว*/
 #brand a {
   color: #ffffff;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Tag ul จะมีการแสดงผลแบบ flex สูง 100% จัดอยู่ตรงกลาง */
+/*กำหนด element ที่อยู่ภายใต้ Tag ul จะมีการแสดงผลแบบ flex สูง 100% จัดอยู่ตรงกลาง */
 ul {
   list-style: none;
   height: 100%;
@@ -53,28 +53,28 @@ ul {
   align-items: center;
   justify-content: space-around;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Tag a  ที่อยู่ใน ul จะมีตัวหนังสือสีขาว ขนาด 25px*/
+/*กำหนด element ที่อยู่ภายใต้ Tag a  ที่อยู่ใน ul จะมีตัวหนังสือสีขาว ขนาด 25px*/
 ul a {
   color: rgb(253, 175, 41);
   font-size: 25px;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Tag li ที่อยู่ใน ul จะมีช่องว่างระหว่าง element ด้านใน 4 px และช่องว่างระหว่าง element ด้านนอกทางขวา 10px  */
+/*กำหนด element ที่อยู่ภายใต้ Tag li ที่อยู่ใน ul จะมีช่องว่างระหว่าง element ด้านใน 4 px และช่องว่างระหว่าง element ด้านนอกทางขวา 10px  */
 ul li {
   padding: 5px;
   margin-left: 10px;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Tag li  ที่อยู่ใน ul เมื่อมีการเอาเม้าส์ไปชี้ จะนู้นขึ้นมา เป็นเวลา 5วินาที*/
+/*กำหนด element ที่อยู่ภายใต้ Tag li  ที่อยู่ใน ul เมื่อมีการเอาเม้าส์ไปชี้ จะนู้นขึ้นมา เป็นเวลา 5วินาที*/
 ul li:hover {
   transform: scale(1.1);
   transition: 5s;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Id hamburger-icon จะมีช่องว่างระหว่าง element ด้านนอก โดยจะให้ระบบปรับแบบอัตโนมัติ มีเคอร์เซอร์ เป็น pointer*/
+/*กำหนด element ที่อยู่ภายใต้ Id hamburger-icon จะมีช่องว่างระหว่าง element ด้านนอก โดยจะให้ระบบปรับแบบอัตโนมัติ มีเคอร์เซอร์ เป็น pointer*/
 #hamburger-icon {
   margin: auto 0;
   display: none;
   cursor: pointer;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ Div ใน Id hamburger-icon จะมีความกว้าง 35px ความสูง 3px มีพื้นหลังสีส้มเหลือง ช่องว่างระหว่าง element ด้านนอก 6px จะเน้นเป็นเวลา 0.4 วินาที*/
+/*กำหนด element ที่อยู่ภายใต้ Div ใน Id hamburger-icon จะมีความกว้าง 35px ความสูง 3px มีพื้นหลังสีส้มเหลือง ช่องว่างระหว่าง element ด้านนอก 6px จะเน้นเป็นเวลา 0.4 วินาที*/
 #hamburger-icon div {
   width: 35px;
   height: 3px;
@@ -96,7 +96,7 @@ ul li:hover {
   -webkit-transform: rotate(45deg) translate(-6px, -8px);
   transform: rotate(45deg) translate(-6px, -8px);
 }
-/*กำหนดขนาดที่อยู่ภายใต้ class mobile-menu  เมื่อ open จะมีการแสดงผลแบบ flex เรียงแบบ column จัดอยู่ตรงกลาง */
+/*กำหนด element ที่อยู่ภายใต้ class mobile-menu  เมื่อ open จะมีการแสดงผลแบบ flex เรียงแบบ column จัดอยู่ตรงกลาง */
 .open .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -104,7 +104,7 @@ ul li:hover {
   justify-content: flex-start;
 
 }
-/*กำหนดขนาดที่อยู่ภายใต้ class mobile-menu จะมีการแสดงผลแบบปกติ ำื้นหลังสีดำ กว้าง 100% ชิดด้านบน 80px */
+/*กำหนด element ที่อยู่ภายใต้ class mobile-menu จะมีการแสดงผลแบบปกติ ำื้นหลังสีดำ กว้าง 100% ชิดด้านบน 80px */
 .mobile-menu {
   display: none;
   position: absolute;
@@ -114,32 +114,20 @@ ul li:hover {
   width: 100%;
   background-color: #1d1c1c;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ class mobile-menu ใน tag a จะมีตัวหนังสือสีเหลืองอ่อน */
+/*กำหนด element ที่อยู่ภายใต้ class mobile-menu ใน tag a จะมีตัวหนังสือสีเหลืองอ่อน */
 .mobile-menu a {
   color: rgb(243, 215, 166);
 }
-/*กำหนดขนาดที่อยู่ภายใต้ class mobile-menu ใน tag li ระยะห่างของ buttom 10px*/
+/*กำหนด element ที่อยู่ภายใต้ class mobile-menu ใน tag li ระยะห่างของ buttom 10px*/
 .mobile-menu li {
   margin-bottom: 10px;
 }
-/*กำหนดขนาดที่อยู่ภายใต้ class mobile-menu ใน tag li เมื่อมีการเอาเม้าส์ไปชี้ จะมีตัวหนังสือสีเหลืองทอง ขอบเงาสีขาว*/
+/*กำหนด element ที่อยู่ภายใต้ class mobile-menu ใน tag li เมื่อมีการเอาเม้าส์ไปชี้ จะมีตัวหนังสือสีเหลืองทอง ขอบเงาสีขาว*/
 .mobile-menu li :hover {
   color: rgb(253, 175, 41);
   text-shadow: rgb(255, 255, 255) 1px 1px;
 }
-/*เป็นการกำหนด แท็ก footer ให้มีการจัดวางตำแหน่งแบบ fixed กว้าง 100% พื้นหลังสีดำ ตัวหนังสือสีเหลืองทองและจัดวางอยู่ตรงกลาง*/
-footer{ 
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 15px;
-    background-color: rgb(15, 15, 15);
-    color: rgb(253, 175, 41);
-    text-align: center;
-}
-
-/*  เป็นการกำหนด ขนาดของรูปภาพ ที่อยู่ภายใต้ แท็ก img ให้มีขนาด ความสูง 100 % ความกว้าง 100 % และกำหนด object ให้อยู่ในรูปแบบ cover  */
+/*  เป็นการกำหนด element ขนาดของรูปภาพ ที่อยู่ภายใต้ แท็ก img ให้มีขนาด ความสูง 100 % ความกว้าง 100 % และกำหนด object ให้อยู่ในรูปแบบ cover  */
 img {
 	height: 100%;
 	width: 100%;
@@ -155,7 +143,6 @@ img {
 	justify-content: center;
 }
 
-/*  css rule ในส่วนของ hero    */
 /* กำหนดให้ element ที่ใช้ id ที่ชื่อว่า hero เมื่อภายหลังการแสดงผล ให้มีความสูงและความกว้างเป็น 100% และสีพื้นหลังเป็นสีดำ */
 #hero::after {
 	content: '';
@@ -267,11 +254,6 @@ img {
 		font-weight: 500;
 	}
 }
-
- 
-
-
-
 /* กำหนดให้ element ที่มี class เป็น section-title ให้ มีขนาดตัวอักษร 4 rem ความสูงของ ตัวอักษร 300 px และมีสีดำ และมีความกว้าง 10 px และอยู่บริเวณตรงกลาง */
 .section-title {
 	font-size: 4rem;
@@ -289,8 +271,6 @@ img {
 }
 
 
-/* css rule education page */
-
 /* กำหนดให้ element ที่ใช้ id ที่ชื่อว่า educations และคลาส ที่ชื่อว่า educations โดยให้ พื้นหลังมีขนาด cover และแสดงในรูปของ column และมีความกว้างระหว่างขอบเป็น 100 px*/
 #educations .educations {
 	background-size: cover;
@@ -299,6 +279,7 @@ img {
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
+	margin-top: 10px;
 }
      
 /*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า educations และคลาส ที่ชื่อว่า education-top โดยกำหนดให้มีความกว้างสูงสุด 500 px และความกว้างระหว่าง element เป็น auto */
@@ -313,7 +294,6 @@ img {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 10px;
 }
 
 /*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า educations และคลาส ที่ชื่อว่า education-item โดยให้แสดงอยู่ในลักษณะ ของflex และ แสดงอยู่ในลักษณะของ column และรูกำหนดให้รูปพื้นหลังอยู่ตามตำแหน่งที่ระบุ */
@@ -368,6 +348,58 @@ img {
 	color: white;
 	text-align: left;
 }
+/*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า footer โดยกำหนดให้้สีของรูปภาพมีสีดำอ่อน */
+#footer {
+	background-image: linear-gradient(60deg, #1d1c1c 0%, #1d1c1c 100%);
+}
+
+/*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า footer และelement ที่ใช้ คลาสที่ชื่อว่า footer โดยให้มีความสูงไม่เกิน 200 px และความกว้างระหว่าง element ด้านบน 50 px */
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+/*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า footer และแท็ค h2 ที่อยู่ภายใต้คลาส ให้มีสีดำอ่อน และความกว้างของตัวอักษร 500 px และขนาดของตัวอักษร 1.8 rem */
+#footer h2 {
+	color: rgb(255, 255, 255);
+	font-weight: 800;
+	font-size: 1.5rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า footer และ element ที่ใช้คลาสที่ชื่อว่า social-icon โดยกำหนด ให้การแสดงผลเป็นลักษณะ flex และระยะห่างหว่าง bottom ให้มีขนาด 30 px  */
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+/*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า footer และ element ที่ใช้คลาสที่ชื่อว่า social-item กำหนดให้ ความสูงและความกว้างเป็น 50 px และความกว้างระหว่าง element 5 px */
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+
+/*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า footer ที่ใช้คลาสที่ชื่อว่า social-item และแท็ค img  แปลงภาพระดับสีเทาอยู่ในระดับ1  */
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: .3s ease filter;
+}
+
+/*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า footer ที่ใช้คลาสที่ชื่อว่า social-item และแสดงในภายหลัง และแท็ค img  แปลงภาพระดับสีเทาอยู่ในระดับ0  */
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+
+/*กำหนดให้ element ที่ใช้ id ที่ชื่อว่า footer และ element ที่อยู่ภายใต้ แท็ค p  กำหนดให้มีสีขาวและมีขนาดของ ตัวอักษรขนาด 1.3 rem */
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
 
 
 
@@ -396,9 +428,9 @@ img {
 	#hero h1 {
 		font-size: 2rem;
 	}
-  
- 
 }
+
+
 
 /* Media Query สำหรับ ขนาดของ Desktop ที่มีขนาดของหน้าจอที่น้อยกว่า 1200px */
 @media only screen and (min-width: 1200px) {
