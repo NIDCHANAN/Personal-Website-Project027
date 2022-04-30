@@ -105,7 +105,7 @@ body {
 
 
 /* Media Query สำหรับ ขนาดของ Desktop ที่มีขนาดของหน้าจอที่น้อยกว่า 786px */
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 800px) {
   /*กำหนด element ที่อยู่ภายใต้ ID  .tile.down .tile.down .tile.left Tile.right เริ่มต้น ให้มีขนาดหนา กว้าง 3px*/
   .tile.up:before,
   .tile.down:before,

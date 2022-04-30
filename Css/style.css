@@ -403,8 +403,8 @@ img {
 
 
 
-/* Media Query สำหรับ ขนาดของ Desktop ที่มีขนาดของหน้าจอที่น้อยกว่า 786px */
-@media only screen and (max-width: 768px) {
+/* Media Query สำหรับ ขนาดของ Desktop ที่มีขนาดของหน้าจอที่น้อยกว่า 800px */
+@media only screen and (max-width: 800px) {
   header nav {
     display: none;
   }
@@ -418,13 +418,13 @@ img {
   margin: 2.5%;
   }
 
-  /*กำหนดให้ แท็ค h1 ที่ใช้class ที่ชื่อว่า section-title โโยกำหนดให้ตัวอักษรมีขนาด 6 rem และแสดงผลอยู่ กึ่งกลาง*/
+  /*กำหนดให้ แท็ค h1 ที่ใช้class ที่ชื่อว่า section-title โโยกำหนดให้ตัวอักษรมีขนาด 1.5 rem และแสดงผลอยู่ กึ่งกลาง*/
 	h1.section-title {
 		font-size: 1.5rem;
 		text-align: center;
 	}
 	
-	/* กำหนดให้ element ที่มี  id ที่ชื่อว่า hero และ แท็ค h1 กำหนดให้ตัวอักษรให้มีขนาด 7 rem */
+	/* กำหนดให้ element ที่มี  id ที่ชื่อว่า hero และ แท็ค h1 กำหนดให้ตัวอักษรให้มีขนาด 2 rem */
 	#hero h1 {
 		font-size: 2rem;
 	}
